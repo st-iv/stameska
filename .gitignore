@@ -1,0 +1,9 @@
+build/*
+src/img/*.svg
+
+
+node_modules/
+*.log
+*.sublime-*
+*.rar
+*.zip
