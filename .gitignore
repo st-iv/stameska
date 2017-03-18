@@ -1,5 +1,6 @@
 build/*
 src/img/*.svg
+.idea/*
 
 
 node_modules/
