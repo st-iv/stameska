@@ -2256,6 +2256,7 @@ p {
   background-attachment: scroll;
 }
 .back-to-top {
+  z-index: 3;
   cursor: pointer;
   background-image: url("../img/top.png");
   background-size: contain;
