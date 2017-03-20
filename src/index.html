@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head lang="en">
+  <head lang="ru">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +17,15 @@
     <!--[if lt IE 10]>
     <link rel="stylesheet" href="assets/css/ie.css">
     <![endif]-->
-  </head>
+                        <!-- jQuery for older IE -->
+                    <!--<script src="/js/jquery-3.2.0.min.js"></script> <script type="text/javascript" src="js/scripts.js"></script>  -->
+                    
+                    <!-- Site Sripts -->
+                      
+                     
+
   <body>
-    
+
     <header class="site-header">
       <nav class="site-nav">
         <div class="container">
@@ -28,11 +34,11 @@
           </a>
           <span class="main-nav-trigger trigger-nav">&#9776;</span>
           <ul class="horizontal-nav trigger-victim">
-            <li><a href="#!" class="active">Главная</a></li>
-            <li><a href="#!">Доставка и оплата</a></li>
-            <li><a href="#!">Каталог</a></li>
-            <li><a href="#!">О компании</a></li>
-            <li><a href="#!">Контакты</a></li>
+            <li><a href="#!" class="active go_to">Главная</a></li>          
+            <li><a href="#!" class="go_to">Каталог</a></li>
+            <li><a href="#!" class="go_to">О компании</a></li>
+            <li><a href="#!" class="go_to">Доставка и оплата</a></li>
+            <li><a href="#contacts" class="go_to">Контакты</a></li>
           </ul>
           </div><!-- //.container -->
           </nav><!-- //.site-nav -->
@@ -78,7 +84,7 @@
 
                       <ul class="horizontal-nav black-font tab-menu trigger-victim">
                         <li><a href="#!" class="active">Все</a></li>
-                        <li><a href="#!">Бабочки</a></li>
+                        <li><a href="#!" id="ties">Бабочки</a></li>
                         <li><a href="#!">Освещение</a></li>
                         <li><a href="#!">Магниты</a></li>
                         <li><a href="#!">Другое</a></li>
@@ -86,14 +92,26 @@
                       <h2 class="stn-heading black-line container">Каталог</h2>
                       
                       <div class="row thumbs-row">
-                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-1"></a></div>
-                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-2"></a></div>
-                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-3"></a></div>
-                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-4"></a></div>
+                        <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-1"></a></div>
+                        <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-2"></a></div>
+                        <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-3"></a></div>
+                        <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-4"></a></div>
+                        
+                        <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-6"></a></div>
+                        
+                       
+                        <div class="col-sm-6 col-md-3 light"><a href="#!" class="thumb-9"></a></div>
+                        <div class="col-sm-6 col-md-3 light"><a href="#!" class="thumb-10"></a></div>
+                        <div class="col-sm-6 col-md-3 light"><a href="#!" class="thumb-11"></a></div>
+                        <div class="col-sm-6 col-md-3 magnets"><a href="#!" class="thumb-12"></a></div>
+                        <div class="col-sm-6 col-md-3 magnets"><a href="#!" class="thumb-13"></a></div>
+                        <div class="col-sm-6 col-md-3 magnets"><a href="#!" class="thumb-14"></a></div>
+                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-15"></a></div>
+                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-16"></a></div>
                         <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-5"></a></div>
-                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-6"></a></div>
                         <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-7"></a></div>
-                        <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-8"></a></div>
+                         <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-8"></a></div>
+
                       </div>
                     </section>
                     
@@ -157,7 +175,7 @@
                     </div>
                   </section>
                    -->
-                  <section class="contacts">
+                  <section class="contacts" id="contacts">
                     <h2 class="stn-heading container">Контакты</h2>
                     <div class="container">
 
@@ -214,11 +232,10 @@
 
 
 
-                    <!-- jQuery for older IE -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                    <!-- Site Sripts -->
-                    <script src="assets/js/functions.js"></script>
-					    <script>
+
+<!-- scripts!!! -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
 
        $(document).ready(function(){
            $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
@@ -229,7 +246,28 @@
              return false; // выключаем стандартное действие
            });
        });
+       // catalog
+        $(document).ready(function(){
 
+           $("#ties").click(function () {
+                       if ($(".tie").is(":hidden")) {
+
+                               $(".tie").show();
+                               $(".light").hide();
+                               $(".magnets").hide();
+
+                       } else {
+
+                               $(".tie").show();
+                               $(".light").hide();
+                               $(".magnets").hide();
+
+                       }
+ return false;
+});
+});
     </script>
+
+
                   </body>
                 </html>

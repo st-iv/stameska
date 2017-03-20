@@ -2191,57 +2191,113 @@ p {
   line-height: 3.75;
 }
 .thumb-1 {
-  background-image: url('../img/tie.jpg');
-  baclground-position: center center;
+  background-image: url('../img/9.jpg');
+  background-position: 50% center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: 155%;
   background-attachment: scroll;
 }
 .thumb-2 {
-  background-image: url('../img/thumb-2.jpg');
-  baclground-position: center center;
+  background-image: url('../img/1.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
 .thumb-3 {
-  background-image: url('../img/thumb-3.jpg');
-  baclground-position: center center;
+  background-image: url('../img/2.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
 .thumb-4 {
-  background-image: url('../img/thumb-5.jpg');
-  baclground-position: center center;
+  background-image: url('../img/3.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
 .thumb-5 {
-  background-image: url('../img/thumb-5.jpg');
-  baclground-position: center center;
+  background-image: url('../img/4.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
 .thumb-6 {
-  background-image: url('../img/thumb-6.jpg');
-  baclground-position: center center;
+  background-image: url('../img/5.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
 .thumb-7 {
-  background-image: url('../img/thumb-7.jpg');
-  baclground-position: center center;
+  background-image: url('../img/9.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
 .thumb-8 {
-  background-image: url('../img/thumb-8.jpg');
-  baclground-position: center center;
+  background-image: url('../img/6.jpg');
+  background-position: 40% center;
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-attachment: scroll;
+}
+.thumb-9 {
+  background-image: url('../img/L1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-10 {
+  background-image: url('../img/L2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-11 {
+  background-image: url('../img/L3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-12 {
+  background-image: url('../img/z1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-13 {
+  background-image: url('../img/m2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-14 {
+  background-image: url('../img/m3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-15 {
+  background-image: url('../img/z2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.thumb-16 {
+  background-image: url('../img/z3.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
