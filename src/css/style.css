@@ -1912,6 +1912,9 @@ select[multiple].input-lg {
 .icon-man:before {
   content: "\e9dc";
 }
+.feature__wrap {
+  text-align: left;
+}
 .icon-4pro,
 .icon-1company,
 .icon-2adv,
@@ -1920,7 +1923,7 @@ select[multiple].input-lg {
   background: url('../img/spritesheet.png') no-repeat;
   overflow: hidden;
   text-indent: -9999px;
-  text-align: left;
+  text-align: center;
 }
 .icon-4pro {
   background-position: -4px 0px;
@@ -2137,12 +2140,18 @@ p {
   color: #fff;
   font-weight: 500;
 }
+.feature__title {
+  margin-top: 45px;
+}
 .stn-services h3 {
   text-transform: uppercase;
   font-size: 1.714em;
   line-height: 1;
   margin-top: 20px;
   margin-bottom: 15px;
+}
+.stn-services h3:last-child {
+  margin-bottom: 45px;
 }
 @media (max-width: 1200px) {
   .stn-services [class^="col-"] {
@@ -2218,13 +2227,6 @@ p {
   background-size: cover;
   background-attachment: scroll;
 }
-.thumb-5 {
-  background-image: url('../img/4.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
 .thumb-6 {
   background-image: url('../img/5.jpg');
   background-position: center center;
@@ -2233,7 +2235,7 @@ p {
   background-attachment: scroll;
 }
 .thumb-7 {
-  background-image: url('../img/9.jpg');
+  background-image: url('../img/13.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2246,61 +2248,25 @@ p {
   background-size: 115%;
   background-attachment: scroll;
 }
-.thumb-9 {
-  background-image: url('../img/L1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.thumb-10 {
-  background-image: url('../img/L2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.thumb-11 {
-  background-image: url('../img/L3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
 .thumb-12 {
-  background-image: url('../img/z1.jpg');
+  background-image: url('../img/10.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
 }
-.thumb-13 {
-  background-image: url('../img/m2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.thumb-14 {
-  background-image: url('../img/m3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.thumb-15 {
-  background-image: url('../img/z2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.thumb-16 {
-  background-image: url('../img/z3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
+.back-to-top {
+  cursor: pointer;
+  background-image: url("../img/top.png");
+  background-size: contain;
+  background-color: #444;
+  border-radius: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  padding: 3em;
+  margin: 2em;
 }
 .stn-video {
   background-color: #535f69;

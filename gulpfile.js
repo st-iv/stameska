@@ -32,8 +32,9 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch',['browser-sync', 'less'], function() {
-    gulp.watch('src/less/**/*.less', ['less']); // Наблюдение за less файлами
+gulp.task('watch',['less','browser-sync'], function() {
+    gulp.watch('src/less/*.less', ['less']); // Наблюдение за less файлами
+     gulp.watch('src/css/*.css', browserSync.reload);
      gulp.watch('src/*.html', browserSync.reload);
       gulp.watch('src/js/**/*.js', browserSync.reload);
     

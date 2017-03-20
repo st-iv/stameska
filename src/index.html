@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿OCTYPE html>
 <html>
 <head lang="ru">
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
 
 
 <body>
-<header class="site-header">
+<header class="site-header" id="main">
     <nav class="site-nav">
         <div class="container">
             <a href="#!" class="site-logo">
@@ -33,13 +33,15 @@
             <span class="main-nav-trigger trigger-nav">&#9776;</span>
             <ul class="horizontal-nav trigger-victim">
                 <li><a href="#!" class="active go_to">Главная</a></li>
-                <li><a href="#!" class="go_to">Каталог</a></li>
-                <li><a href="#!" class="go_to">О компании</a></li>
-                <li><a href="#!" class="go_to">Доставка и оплата</a></li>
+                <li><a href="#catalog" class="go_to">Каталог</a></li>
+                <li><a href="#about" class="go_to">О компании</a></li>
+                <li><a href="#delievery" class="go_to">Доставка и оплата</a></li>
                 <li><a href="#contacts" class="go_to">Контакты</a></li>
             </ul>
         </div><!-- //.container -->
     </nav><!-- //.site-nav -->
+
+    <div class="back-to-top"></div>
     <div class="container">
         <h1 class="hero-heading">
             <span>Все дело в бабочке.</span><br>
@@ -51,67 +53,58 @@
     <h2 class="stn-heading container">Преимущества</h2>
     <div class="container">
 
-        <div class="col-sm-12 col-lg-3">
+        <div class="col-sm-12 col-lg-3 feature__wrap">
             <div class="icon-1company"></div>
             <h3>о компании</h3>
             <p>Мы динамично развивающаяся компания.У нас индивидуальный подход к каждому клиенту</p>
         </div>
-        <div class="col-sm-12 col-lg-3">
+        <div class="col-sm-12 col-lg-3 feature__wrap">
             <div class="icon-2adv"></div>
             <h3>Услуги высокого качества</h3>
             <p>Вы защищены как потребитель. Качество наших услуг соответствует международным стандартам качества</p>
         </div>
 
-        <div class="col-sm-12 col-lg-3">
+        <div class="col-sm-12 col-lg-3 feature__wrap">
             <div class="icon-3tech"></div>
             <h3>Передовые технологии</h3>
             <p>Вы экономите свое время, потому что мы используем только передовые технологии</p>
         </div>
-        <div class="col-sm-12 col-lg-3">
+        <div class="col-sm-12 col-lg-3 feature__wrap">
             <div class="icon-4pro"></div>
             <h3>Профессионально</h3>
-            <p>У нас работают профессионалы своего дела.Мы оказываем услуги самого высокого качества</p>
+            <p class="feature__title">У нас работают профессионалы своего дела.Мы оказываем услуги самого высокого качества</p>
         </div>
 
     </div><!-- container -->
 </section><!-- //services -->
-<div class="stn-portfolio">
+<div class="stn-portfolio" id="catalog">
     <section class="container tab-wrapper">
         <span class="main-nav-trigger trigger-nav">&#9776;</span>
         <ul class="horizontal-nav black-font tab-menu trigger-victim">
             <li><a href="#!" class="active">Все</a></li>
-            <li><a href="#!" id="ties">Бабочки</a></li>
-            <li><a href="#!">Освещение</a></li>
-            <li><a href="#!">Магниты</a></li>
-            <li><a href="#!">Другое</a></li>
+            <li><a href="#!" id="ties">Классика</a></li>
+            <li><a href="#!">Классика плюс</a></li>
+            <li><a href="#!">Ретро</a></li>
+            <li><a href="#!">Ретро плюс</a></li>
+            <li><a href="#!">Модерн</a></li>
         </ul>
         <h2 class="stn-heading black-line container">Каталог</h2>
 
         <div class="row thumbs-row">
-            <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-1"></a></div>
-            <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-2"></a></div>
-            <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-3"></a></div>
-            <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-4"></a></div>
+            <div class="col-sm-6 col-md-3 modern"><a href="#!" class="thumb-1"></a></div>
+            <div class="col-sm-6 col-md-3 modern"><a href="#!" class="thumb-2"></a></div>
+            <div class="col-sm-6 col-md-3 classic__plus"><a href="#!" class="thumb-3"></a></div>
+            <div class="col-sm-6 col-md-3 retro__plus"><a href="#!" class="thumb-4"></a></div>
 
-            <div class="col-sm-6 col-md-3 tie"><a href="#!" class="thumb-6"></a></div>
-
-
-            <div class="col-sm-6 col-md-3 light"><a href="#!" class="thumb-9"></a></div>
-            <div class="col-sm-6 col-md-3 light"><a href="#!" class="thumb-10"></a></div>
-            <div class="col-sm-6 col-md-3 light"><a href="#!" class="thumb-11"></a></div>
-            <div class="col-sm-6 col-md-3 magnets"><a href="#!" class="thumb-12"></a></div>
-            <div class="col-sm-6 col-md-3 magnets"><a href="#!" class="thumb-13"></a></div>
-            <div class="col-sm-6 col-md-3 magnets"><a href="#!" class="thumb-14"></a></div>
-            <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-15"></a></div>
-            <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-16"></a></div>
-            <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-5"></a></div>
-            <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-7"></a></div>
+            <div class="col-sm-6 col-md-3 classic"><a href="#!" class="thumb-6"></a></div>
+            <div class="col-sm-6 col-md-3 retro"><a href="#!" class="thumb-12"></a></div>
+            <div class="col-sm-6 col-md-3 classic__plus"><a href="#!" class="thumb-7"></a></div>
             <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-8"></a></div>
         </div>
     </section>
 
 </div>
-<section class="stn-video">
+<section class="stn-video" id="about">
     <h2 class="stn-heading container">О компании</h2>
     <div class="container">
         <div class="row">
@@ -134,7 +127,7 @@
     </div>
 </section>
 
-<section class="stn-about">
+<section class="stn-about" id="delievery">
     <h2 class="stn-heading container">Доставка и оплата</h2>
     <div class="container">
         <div class="row">
@@ -181,9 +174,7 @@
     <div class="container">
         <form action="contact_me.php" class="row">
             <div class="col-md-6 col-md-push-6 frm-text-col">
-                <p class="contacts__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-                    reprehenderit minima beatae excepturi magni. Excepturi quasi fugiat odit doloremque temporibus, nam
-                    est laboriosam quae totam dolore quod fugit quidem illum.</p>
+                <p class="contacts__text">Социальные сети:</p>
                 <p class="contacts__address">
                     г. Санкт-Петербург<br>
                     Коломяжский пр-кт, 15, к. 2
@@ -217,10 +208,10 @@
     <div class="container">
         <nav>
             <ul class="footer-nav">
-                <li><a href="#!">Главная</a></li>
-                <li><a href="#!">Каталог</a></li>
-                <li><a href="#!">О компании</a></li>
-                <li><a href="#!">Контакты</a></li>
+                <li><a href="#main" class="go_to">Главная</a></li>
+                <li><a href="#catalog" class="go_to">Каталог</a></li>
+                <li><a href="#about" class="go_to">О компании</a></li>
+                <li><a href="#contacts" class="go_to">Контакты</a></li>
             </ul>
         </nav>
         <p class="copyright">2016 &copy</p>
@@ -253,6 +244,22 @@
             return false;
         });
     });
+    // top
+    var $backToTop = $(".back-to-top");
+$backToTop.hide();
+
+
+$(window).on('scroll', function() {
+  if ($(this).scrollTop() > 100) {
+    $backToTop.fadeIn();
+  } else {
+    $backToTop.fadeOut();
+  }
+});
+
+$backToTop.on('click', function(e) {
+  $("html, body").animate({scrollTop: 0}, 500);
+});
 </script>
 </body>
 </html>
