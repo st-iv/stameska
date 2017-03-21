@@ -2391,3 +2391,6 @@ p {
 .delievery-list {
   font-size: 1.214em;
 }
+.hide {
+  display: none !important;
+}

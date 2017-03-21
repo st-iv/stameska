@@ -1,11 +1,11 @@
-﻿OCTYPE html>
+<DOCTYPE html>
 <html>
 <head lang="ru">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Stameska|Бабочки из дерева</title>
+    <title>Title</title>
     <!-- Import main styles -->
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -27,7 +27,7 @@
 <header class="site-header" id="main">
     <nav class="site-nav">
         <div class="container">
-            <a href="#!" class="site-logo">
+            <a href="#main" class="site-logo">
                 <img src="img/logo.png" alt="stameska"><!--  -->
             </a>
             <span class="main-nav-trigger trigger-nav">&#9776;</span>
@@ -81,25 +81,25 @@
     <section class="container tab-wrapper">
         <span class="main-nav-trigger trigger-nav">&#9776;</span>
         <ul class="horizontal-nav black-font tab-menu trigger-victim">
-            <li><a href="#!" class="active">Все</a></li>
-            <li><a href="#!" id="ties">Классика</a></li>
-            <li><a href="0">Классика плюс</a></li>
-            <li><a href="#!">Ретро</a></li>
-            <li><a href="#!">Ретро плюс</a></li>
-            <li><a href="#!">Модерн</a></li>
+            <li><a href="null" class="active">Все</a></li>
+            <li><a href="0" id="ties">Классика</a></li>
+            <li><a href="1">Классика плюс</a></li>
+            <li><a href="2">Ретро</a></li>
+            <li><a href="3">Ретро плюс</a></li>
+            <li><a href="4">Модерн</a></li>
         </ul>
         <h2 class="stn-heading black-line container">Каталог</h2>
 
         <div class="row thumbs-row">
             <div class="col-sm-6 col-md-3 modern" data-category="0"><a href="#!" class="thumb-1"></a></div>
-            <div class="col-sm-6 col-md-3 modern"><a href="#!" class="thumb-2"></a></div>
-            <div class="col-sm-6 col-md-3 classic__plus"><a href="#!" class="thumb-3"></a></div>
-            <div class="col-sm-6 col-md-3 retro__plus"><a href="#!" class="thumb-4"></a></div>
+            <div class="col-sm-6 col-md-3 modern" data-category="0"><a href="#!" class="thumb-2"></a></div>
+            <div class="col-sm-6 col-md-3 classic__plus" data-category="1"><a href="#!" class="thumb-3"></a></div>
+            <div class="col-sm-6 col-md-3 retro__plus" data-category="2"><a href="#!" class="thumb-4"></a></div>
 
-            <div class="col-sm-6 col-md-3 classic"><a href="#!" class="thumb-6"></a></div>
-            <div class="col-sm-6 col-md-3 retro"><a href="#!" class="thumb-12"></a></div>
-            <div class="col-sm-6 col-md-3 classic__plus"><a href="#!" class="thumb-7"></a></div>
-            <div class="col-sm-6 col-md-3"><a href="#!" class="thumb-8" data-category="0"></a></div>
+            <div class="col-sm-6 col-md-3 classic" data-category="3"><a href="#!" class="thumb-6"></a></div>
+            <div class="col-sm-6 col-md-3 retro" data-category="0"><a href="#!" class="thumb-12"></a></div>
+            <div class="col-sm-6 col-md-3 classic__plus" data-category="0"><a href="#!" class="thumb-7"></a></div>
+            <div class="col-sm-6 col-md-3" data-category="0"><a href="#!" class="thumb-8" data-category="0"></a></div>
         </div>
     </section>
 
@@ -260,7 +260,8 @@ $(window).on('scroll', function() {
 $backToTop.on('click', function(e) {
   $("html, body").animate({scrollTop: 0}, 500);
 });
-// menu
+
+// TABS TIES
 var category = function(cat) {
 
   $('[data-category]').each(function() {
@@ -281,6 +282,16 @@ $('a').click(function() {
   
   return false;
 });
+    //end blueasyTabs
+
+
+
+
+
+
+
 </script>
+
+
 </body>
 </html>
