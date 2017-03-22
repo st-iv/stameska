@@ -2189,6 +2189,19 @@ p {
   display: inline-block;  
   padding: 3em;
   margin: 2em;
+  opacity: 0.5;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .back-to-top {
+    position: relative;
+    display: none;
+    z-index: 0;
+    display: none;
+  }
 }
 .stn-video {
   background-color: #535f69;
@@ -2316,3 +2329,4 @@ p {
 .hide {
   display: none !important;
 }
+

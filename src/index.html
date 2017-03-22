@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Title</title>
+    <title>Stameska. Бабочки из дерева</title>
     <!-- Import main styles -->
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -81,25 +81,25 @@
     <section class="container tab-wrapper">
         <span class="main-nav-trigger trigger-nav">&#9776;</span>
         <ul class="horizontal-nav black-font tab-menu trigger-victim">
-            <li><a href="null" class="active">Все</a></li>
-            <li><a href="0" id="ties">Классика</a></li>
-            <li><a href="1">Классика плюс</a></li>
-            <li><a href="2">Ретро</a></li>
-            <li><a href="3">Ретро плюс</a></li>
-            <li><a href="4">Модерн</a></li>
+            <li><a href="null" class="active catalog__item">Все</a></li>
+            <li><a class="catalog__item" href="0" id="ties">Классика</a></li>
+            <li><a class="catalog__item" href="1">Классика плюс</a></li>
+            <li><a class="catalog__item" href="2">Ретро</a></li>
+            <li><a class="catalog__item" href="3">Ретро плюс</a></li>
+            <li><a class="catalog__item" href="4">Модерн</a></li>
         </ul>
         <h2 class="stn-heading black-line container">Каталог</h2>
 
         <div class="row thumbs-row">
-            <div class="col-sm-6 col-md-3 modern" data-category="0"><a href="#!" class="thumb-1"></a></div>
-            <div class="col-sm-6 col-md-3 modern" data-category="0"><a href="#!" class="thumb-2"></a></div>
+            <div class="col-sm-6 col-md-3 modern" data-category="4"><a href="#!" class="thumb-1"></a></div>
+            <div class="col-sm-6 col-md-3 modern" data-category="4"><a href="#!" class="thumb-2"></a></div>
             <div class="col-sm-6 col-md-3 classic__plus" data-category="1"><a href="#!" class="thumb-3"></a></div>
-            <div class="col-sm-6 col-md-3 retro__plus" data-category="2"><a href="#!" class="thumb-4"></a></div>
+            <div class="col-sm-6 col-md-3 retro__plus" data-category="3"><a href="#!" class="thumb-4"></a></div>
 
-            <div class="col-sm-6 col-md-3 classic" data-category="3"><a href="#!" class="thumb-6"></a></div>
-            <div class="col-sm-6 col-md-3 retro" data-category="0"><a href="#!" class="thumb-12"></a></div>
-            <div class="col-sm-6 col-md-3 classic__plus" data-category="0"><a href="#!" class="thumb-7"></a></div>
-            <div class="col-sm-6 col-md-3" data-category="0"><a href="#!" class="thumb-8" data-category="0"></a></div>
+            <div class="col-sm-6 col-md-3 classic" data-category="0"><a href="#!" class="thumb-6"></a></div>
+            <div class="col-sm-6 col-md-3 retro" data-category="2"><a href="#!" class="thumb-12"></a></div>
+            <div class="col-sm-6 col-md-3 classic__plus" data-category="1"><a href="#!" class="thumb-7"></a></div>
+            <div class="col-sm-6 col-md-3" data-category="null"><a href="#!" class="thumb-8" data-category="0"></a></div>
         </div>
     </section>
 
@@ -131,30 +131,16 @@
     <h2 class="stn-heading container">Доставка и оплата</h2>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h3 class="stn-tittle">Доставка курьером.Cанкт Петербург</h3>
-                <p class="stn-video__text">При заказе от 5000 рублей доставка (в пределах МКАД) БЕСПЛАТНО!</p>
-                <ul class="delievery-list">
-                    <li class="delievery-list__item">по Москве (в пределах МКАД) – 300 руб.,</li>
-                    <li class="delievery-list__item">по Московской области (за пределами МКАД до 5 км) – 350 руб.,</li>
-                    <li class="delievery-list__item">по Московской области (за пределами МКАД свыше 5 км) – 350 руб. +
-                        25 руб./км.
-                    </li>
-                </ul>
-                <p class="stn-video__text">Время доставки: пн-вс с 10:00 до 22:00.
-                    крупногабаритные товары (сумма сторон которых превышает 100 см/вес превышает 10 кг), доставляются до
-                    подъезда
-                <p>
-                </p>
-                <p></p>
-            </div>
-            <div class="col-md-6">
-                <ul class="social-links">
-                    <li><a href=""><i class="icon-envelope"></i></a></li>
-                    <li><a href=""><i class="icon-vk"></i></a></li>
-                </ul>
 
+            <div class="col-md-6">
+            <p class="stn-video__text">
+                Мы так любим своих покупателей, что уже включили доставку в стоимость конечного продукта. Отправка осуществляется силами Почты России или сервисом IML, если пункт выдачи заказов есть в вашем городе. Доставка по Санкт-Петербургу до метро осуществляется бесплатно.
+            </p>
             </div>
+                    <div class="col-md-6">
+            <img src="img/dostavka.jpg" alt="" class="img-responsive">
+        </div>
+
         </div>
     </div>
 </section>
@@ -209,7 +195,7 @@
         <nav>
             <ul class="footer-nav">
                 <li><a href="#main" class="go_to">Главная</a></li>
-                <li><a href="#catalog" class="go_to">Каталог</a></li>
+                <li><a href="#catalog" class="go_to" >Каталог</a></li>
                 <li><a href="#about" class="go_to">О компании</a></li>
                 <li><a href="#contacts" class="go_to">Контакты</a></li>
             </ul>
@@ -218,7 +204,10 @@
     </div>
 </footer>
 <!-- scripts!!! -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script>
     $(document).ready(function () {
         $('.go_to').click(function () { // ловим клик по ссылке с классом go_to
@@ -275,7 +264,7 @@ var category = function(cat) {
   });
 };
 
-$('a').click(function() {
+$('a.catalog__item').click(function() {
   var cat = $(this).attr('href');
   
   category( cat );

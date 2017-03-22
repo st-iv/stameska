@@ -2268,6 +2268,18 @@ p {
   display: inline-block;
   padding: 3em;
   margin: 2em;
+  opacity: 0.5;
+  transition: all 0.2s;
+}
+.back-to-top:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .back-to-top {
+    position: relative;
+    z-index: 0;
+    display: none;
+  }
 }
 .stn-video {
   background-color: #535f69;
