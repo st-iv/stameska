@@ -1,10 +1,10 @@
 var gulp = require('gulp'),
-	browserSync = require('browser-sync'),
-	less = require('gulp-less'),
-	concat  = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
+	  browserSync = require('browser-sync'),
+	  less = require('gulp-less'),
+	  concat  = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
     fileinclude = require('gulp-file-include'),
     uglify  = require('gulp-uglifyjs'); // Подключаем gulp-uglifyjs (для сжатия JS)
-
+    spritesmith = require('gulp.spritesmith'); //Сборка спрайта
 
 
 gulp.task('less', function(){ // Создаем таск "sass"
@@ -13,6 +13,15 @@ gulp.task('less', function(){ // Создаем таск "sass"
         .pipe(gulp.dest('src/css')) // Выгружаем результата в папку app/css
         .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
+
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('src/icons/sprite/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css'
+  }));
+  return spriteData.pipe(gulp.dest('src/icons/sprite/'));
+});
+
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browser Sync
