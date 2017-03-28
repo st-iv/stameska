@@ -16,57 +16,57 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-1about {
+.icon-1490451217_4 {
   background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 56px;
-  height: 56px;
+  width: 128px;
+  height: 128px;
+}
+.icon-1about {
+  background-image: url(sprite.png);
+  background-position: -128px 0px;
+  width: 128px;
+  height: 128px;
 }
 .icon-2thumb_up {
   background-image: url(sprite.png);
-  background-position: -56px 0px;
-  width: 56px;
-  height: 56px;
+  background-position: 0px -128px;
+  width: 128px;
+  height: 128px;
 }
 .icon-3tech {
   background-image: url(sprite.png);
-  background-position: 0px -56px;
-  width: 56px;
-  height: 56px;
+  background-position: -128px -128px;
+  width: 128px;
+  height: 128px;
 }
 .icon-4pro {
   background-image: url(sprite.png);
-  background-position: -56px -56px;
-  width: 56px;
-  height: 56px;
-}
-.icon-5vk {
-  background-image: url(sprite.png);
-  background-position: -112px 0px;
-  width: 36px;
-  height: 36px;
+  background-position: -256px 0px;
+  width: 128px;
+  height: 128px;
 }
 .icon-facebook {
   background-image: url(sprite.png);
-  background-position: -112px -36px;
-  width: 36px;
-  height: 36px;
+  background-position: -256px -128px;
+  width: 128px;
+  height: 128px;
 }
 .icon-inst {
   background-image: url(sprite.png);
-  background-position: -112px -72px;
-  width: 36px;
-  height: 36px;
+  background-position: 0px -256px;
+  width: 128px;
+  height: 128px;
 }
 .icon-skype {
   background-image: url(sprite.png);
-  background-position: 0px -112px;
-  width: 36px;
-  height: 36px;
+  background-position: -128px -256px;
+  width: 128px;
+  height: 128px;
 }
-.icon-twi {
+.icon-vk {
   background-image: url(sprite.png);
-  background-position: -36px -112px;
-  width: 36px;
-  height: 36px;
+  background-position: -256px -256px;
+  width: 128px;
+  height: 128px;
 }

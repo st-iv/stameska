@@ -54,12 +54,12 @@
     <div class="container">
 
         <div class="col-sm-12 col-lg-3 feature__wrap">
-            <div class="icon-1company"></div>
+            <div class="icon-1about"></div>
             <h3>о компании</h3>
-            <p>Мы динамично развивающаяся компания.У нас индивидуальный подход к каждому клиенту</p>
+            <p class="feature__title">Мы динамично развивающаяся компания. У нас индивидуальный подход к каждому клиенту</p>
         </div>
         <div class="col-sm-12 col-lg-3 feature__wrap">
-            <div class="icon-2adv"></div>
+            <div class="icon-2thumb_up"></div>
             <h3>Услуги высокого качества</h3>
             <p>Вы защищены как потребитель. Качество наших услуг соответствует международным стандартам качества</p>
         </div>
@@ -72,7 +72,7 @@
         <div class="col-sm-12 col-lg-3 feature__wrap">
             <div class="icon-4pro"></div>
             <h3>Профессионально</h3>
-            <p class="feature__title">У нас работают профессионалы своего дела.Мы оказываем услуги самого высокого качества</p>
+            <p class="feature__title">У нас работают профессионалы своего дела. Мы оказываем услуги самого высокого качества</p>
         </div>
 
     </div><!-- container -->
@@ -160,11 +160,7 @@
     <div class="container">
         <form action="contact_me.php" class="row">
             <div class="col-md-6 col-md-push-6 frm-text-col">
-                <p class="contacts__text">Социальные сети:</p>
-                <p class="contacts__address">
-                    г. Санкт-Петербург<br>
-                    Коломяжский пр-кт, 15, к. 2
-                </p>
+  
             </div>
             <div class="col-md-5 col-md-pull-6">
                 <div class="frm-group">
@@ -192,15 +188,31 @@
 <!-- contacts -->
 <footer class="site-footer">
     <div class="container">
-        <nav>
+        
             <ul class="footer-nav">
                 <li><a href="#main" class="go_to">Главная</a></li>
                 <li><a href="#catalog" class="go_to" >Каталог</a></li>
                 <li><a href="#about" class="go_to">О компании</a></li>
                 <li><a href="#contacts" class="go_to">Контакты</a></li>
             </ul>
-        </nav>
-        <p class="copyright">2016 &copy</p>
+       
+        <div class="footer__soc">
+            <ul class="socials">
+              <li class="socials__item">
+                  <a href="#!" class="sprite icon-5vk"></a>
+              </li>
+              <li class="socials__item">
+                  <a href="#!" class="sprite icon-inst"></a>
+              </li>
+              <li class="socials__item">
+                  <a href="#!" class="sprite icon-skype"></a>
+              </li>
+             <li class="socials__item">
+                  <a href="#!" class="sprite icon-twi"></a>
+              </li>
+           
+            </ul></div>
+
     </div>
 </footer>
 <!-- scripts!!! -->
@@ -273,7 +285,12 @@ $('a.catalog__item').click(function() {
 });
     //end blueasyTabs
 
-
+// add class
+$(".tab-wrapper ul li a").click(function(e) {
+  e.preventDefault();
+  $(".tab-wrapper ul li a").removeClass('active');
+  $(this).addClass('active');
+})
 
 
 

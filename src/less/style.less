@@ -14,6 +14,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+@import url("../icons/sprite/sprite.css");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1738,10 +1740,24 @@ select[multiple].input-lg {
 .horizontal-nav,
 .social-links,
 .social-links,
-.footer-nav {
+.footer-nav,
+.socials {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.socials__item {
+  display: inline-block;
+  margin-right: 0.4em;
+  opacity: 0.5;
+  transition:0.7s all;
+  &:hover {
+    opacity:1;
+  }
+  a {
+  overflow: hidden;
+  text-decoration: none;
+  }
 }
 .row.no-gutters {
   margin-right: 0;
@@ -1760,7 +1776,10 @@ select[multiple].input-lg {
 .stn-reviews,
 .site-footer,
 .contacts {
-  padding: 80px 0;
+  padding: 40px 0;
+}
+.footer-nav {
+   padding-top: 0.7em;
 }
 @font-face {
   font-family: 'Segoe';
@@ -1826,36 +1845,17 @@ select[multiple].input-lg {
 
 .feature__wrap {
   text-align: left;
+  p {
+    font-size: 18px;
+  }
+
 }
-.icon-4pro,
-.icon-1company,
-.icon-2adv,
-.icon-3tech {
+
+
+
+.sprite {
   display: inline-block;
-  background: url('../img/spritesheet.png') no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
-  text-align: center;
-}
-.icon-4pro {
-  background-position: -4px 0px;
-  width: 72px;
-  height: 42px;
-}
-.icon-1company {
-  background-position: -4px -46px;
-  width: 54px;
-  height: 62px;
-}
-.icon-2adv {
-  background-position: -4px -112px;
-  width: 54px;
-  height: 50px;
-}
-.icon-3tech {
-  background-position: -4px -166px;
-  width: 54px;
-  height: 54px;
+  margin-right: 5px;
 }
 
 .horizontal-nav li {
@@ -2063,11 +2063,10 @@ p {
 .stn-services h3 {
   text-transform: uppercase;
   font-size: 1.714em;
-  line-height: 1;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  line-height: 1.2;
+  vertical-align: center;
   &:last-child {
-    margin-bottom: 45px;
+
   }
 }
 @media (max-width: 1200px) {
@@ -2278,7 +2277,7 @@ p {
   font-weight: 600;
 }
 .site-footer {
-  background-color: #535f69;
+  background-color: #404951;
   color: #6d7f89;
   font-size: 0.857em;
   font-weight: 500;
@@ -2304,11 +2303,12 @@ p {
   display: inline-block;
   padding: 0 10px;
 }
-.copyright {
+.footer__soc {
   float: right;
 }
 .contacts {
-  background-image: url('../img/blur-img-clr.png');
+  background-color: #535f69;
+  // background-image: url('../img/blur-img-clr.png');
   baclground-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
