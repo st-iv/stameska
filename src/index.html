@@ -53,26 +53,26 @@
     <h2 class="stn-heading container">Преимущества</h2>
     <div class="container">
 
-        <div class="col-sm-12 col-lg-3 feature__wrap">
-            <div class="icon-1about"></div>
+        <div class="col-sm-6 col-lg-3 feature__wrap">
+            <div class="features__icon icon-1about"></div>
             <h3>о компании</h3>
-            <p class="feature__title">Мы динамично развивающаяся компания. У нас индивидуальный подход к каждому клиенту</p>
+            <p>Мы динамично развивающаяся компания. У нас индивидуальный подход к каждому клиенту</p>
         </div>
-        <div class="col-sm-12 col-lg-3 feature__wrap">
-            <div class="icon-2thumb_up"></div>
-            <h3>Услуги высокого качества</h3>
+        <div class="col-sm-6 col-lg-3 feature__wrap">
+            <div class="features__icon icon-2thumb_up"></div>
+            <h3>Качество</h3>
             <p>Вы защищены как потребитель. Качество наших услуг соответствует международным стандартам качества</p>
         </div>
 
-        <div class="col-sm-12 col-lg-3 feature__wrap">
-            <div class="icon-3tech"></div>
-            <h3>Передовые технологии</h3>
+        <div class="col-sm-6 col-lg-3 feature__wrap">
+            <div class="features__icon icon-3tech"></div>
+            <h3>технологии</h3>
             <p>Вы экономите свое время, потому что мы используем только передовые технологии</p>
         </div>
-        <div class="col-sm-12 col-lg-3 feature__wrap">
-            <div class="icon-4pro"></div>
+        <div class="col-sm-6 col-lg-3 feature__wrap">
+            <div class="features__icon icon-4pro"></div>
             <h3>Профессионально</h3>
-            <p class="feature__title">У нас работают профессионалы своего дела. Мы оказываем услуги самого высокого качества</p>
+            <p>У нас работают профессионалы своего дела. Мы оказываем услуги самого высокого качества</p>
         </div>
 
     </div><!-- container -->
@@ -91,6 +91,7 @@
         <h2 class="stn-heading black-line container">Каталог</h2>
 
         <div class="row thumbs-row">
+            <img src="img/1.jpg" alt="" class="img-responsive" width="128px">
             <div class="col-sm-6 col-md-3 modern" data-category="4"><a href="#!" class="thumb-1"></a></div>
             <div class="col-sm-6 col-md-3 modern" data-category="4"><a href="#!" class="thumb-2"></a></div>
             <div class="col-sm-6 col-md-3 classic__plus" data-category="1"><a href="#!" class="thumb-3"></a></div>
@@ -286,12 +287,28 @@ $('a.catalog__item').click(function() {
     //end blueasyTabs
 
 // add class
-$(".tab-wrapper ul li a").click(function(e) {
+$(".horizontal-nav li a").click(function(e) {
   e.preventDefault();
-  $(".tab-wrapper ul li a").removeClass('active');
+  $(".horizontal-nav li a").removeClass('active');
   $(this).addClass('active');
 })
 
+// tabmenu
+
+function tabmenu() {
+  var $trigger = $('.trigger-nav'),
+      $menu = $('.trigger-victim');
+
+  $trigger.click(function() {
+    $(this).next($menu).slideToggle();
+  });
+  $(window).resize(function() {
+    if ($(window).width()>992 ){
+        $menu.removeAttr('style');
+    }
+  });
+}
+tabmenu();
 
 
 
