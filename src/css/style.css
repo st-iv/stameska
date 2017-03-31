@@ -26,6 +26,9 @@
   .thumbs-row {
     margin-top: 1em;
   }
+  .back-to-top {
+    display: none !important;
+  }
   .tab-menu {
     margin-top: 1em;
     margin-bottom: 1em;
