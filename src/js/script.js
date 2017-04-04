@@ -82,5 +82,7 @@ function tabmenu() {
 }
 tabmenu();
 
-
+$(".main-nav-trigger").click( function() {
+  $(this).toggleClass("active");
+});
 

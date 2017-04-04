@@ -5,7 +5,16 @@ var gulp = require('gulp'),
     fileinclude = require('gulp-file-include'),
     uglify  = require('gulp-uglifyjs'); // Подключаем gulp-uglifyjs (для сжатия JS)
     spritesmith = require('gulp.spritesmith'); //Сборка спрайта
-
+    autoprefixer = require('gulp-autoprefixer');
+ 
+gulp.task('prefix', () =>
+    gulp.src('src/css/style.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('build'))
+);
 
 gulp.task('less', function(){ // Создаем таск "sass"
     return gulp.src('src/less/style.less') // Берем источник
